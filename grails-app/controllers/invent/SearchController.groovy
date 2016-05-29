@@ -7,7 +7,7 @@ class SearchController {
 		String query = params.query
 		
 		def dbQuery = Item.where {
-			name =~ "%${query}%" | description =~ "%${query}%"
+			name =~ "%${query}%" | description =~ "%${query}%" | ourPartNumber =~ "%${query}%" | manufacturerPartNumber =~ "%${query}%" | suppliersPartNumber =~ "%${query}%" | manufacturerName =~ "%${query}%"  | modelNumber =~ "%${query}%"
 		}
 		def searchResult = dbQuery.list() ?: []
 		log.info "RESULT $searchResult"
