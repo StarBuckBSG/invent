@@ -5,6 +5,8 @@ grails.plugin.springsecurity.userLookup.userDomainClassName = 'invent.auth.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'invent.auth.UserRole'
 grails.plugin.springsecurity.authority.className = 'invent.auth.Role'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	[pattern: '/logout',               access: ['permitAll']],
+	[pattern: '/login',               access: ['permitAll']],
 	[pattern: '/',               access: ['permitAll']],
 	[pattern: '/error',          access: ['permitAll']],
 	[pattern: '/index',          access: ['permitAll']],
@@ -29,3 +31,5 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 grails.plugin.springsecurity.roleHierarchy = '''
    ROLE_ADMIN > ROLE_USER
 '''
+
+grails.plugin.springsecurity.logout.postOnly = false
