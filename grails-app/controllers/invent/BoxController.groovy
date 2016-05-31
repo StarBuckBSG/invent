@@ -1,9 +1,12 @@
 package invent
 
-import static org.springframework.http.HttpStatus.*
+
+import grails.plugin.springsecurity.annotation.Secured;
 import grails.transaction.Transactional
 
+
 @Transactional(readOnly = true)
+@Secured(value=["hasRole('ROLE_USER')"])
 class BoxController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
@@ -13,6 +16,7 @@ class BoxController {
         respond Box.list(params), model:[boxCount: Box.count()]
     }
 
+	
     def show(Box box) {
         respond box
     }

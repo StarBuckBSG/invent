@@ -1,5 +1,8 @@
 package invent
 
+import grails.plugin.springsecurity.annotation.Secured
+
+@Secured(value=["hasRole('ROLE_USER')"])
 class SearchController {
 	
 	def index() {
