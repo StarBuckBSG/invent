@@ -14,6 +14,6 @@ class SearchController {
 		}
 		def searchResult = dbQuery.list() ?: []
 		log.info "RESULT $searchResult"
-		render(view: "index", model: [searchResult:searchResult])
+		render(view: "index", model: [searchResult:searchResult, query:query])
 	}
 }

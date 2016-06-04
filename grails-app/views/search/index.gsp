@@ -10,14 +10,26 @@
 	<div class="message" role="status">${flash.message}</div>
 	</g:if>
 	
-	<g:if test="${searchResult.size() > 0}">
+	
+	<g:if test="${query == null || query.length() == 0}">
+	Welcome to the inventory system
+	</g:if>
+	<g:else>
+	
+	
+		<g:if test="${searchResult.size() > 0}">
 	   	<g:each in="${searchResult}" var="item">
 			<p><g:link controller="item" action="show" id="${item.id}">${item.name}</g:link> is in <g:link controller="box" action="show" id="${item.box.id}">${item.box}</g:link>
 		</g:each>
-	</g:if>
-	<g:else>
-	   Nothing found
+		</g:if>
+		<g:else>
+		   Nothing found
+		</g:else>
+		
 	</g:else>
+	
+	
+
 	
 
 
