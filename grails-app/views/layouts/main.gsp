@@ -16,7 +16,11 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Falcon</a>
+      
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="assets/falcon_logo.png" style="width:120px; height:40px;">
+      </a>
+      
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
