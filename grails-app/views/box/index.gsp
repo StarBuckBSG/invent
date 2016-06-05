@@ -6,7 +6,7 @@
         <title><g:message code="default.list.label" args="[entityName]" /></title>
     </head>
     <body>
-        <a href="/box/create" class="create">New box</a>
+        <a href="/box/create" class="btn btn-primary" >New box</a>
         
         <div id="list-box" class="content scaffold-list" role="main">
             <h1><g:message code="default.list.label" args="[entityName]" /></h1>

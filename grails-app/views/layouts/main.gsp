@@ -8,6 +8,7 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <asset:stylesheet src="bootstrap.css"/>
+    <asset:stylesheet src="main.css"/>
     <g:layoutHead/>
 </head>
 <body>
@@ -18,7 +19,7 @@
     <div class="navbar-header">
       
       <a class="navbar-brand" href="#">
-        <img alt="Brand" src="assets/falcon_logo.png" style="width:120px; height:40px;">
+        <img alt="Brand" src="/assets/falcon_logo.png" style="width:120px; height:40px;">
       </a>
       
     </div>

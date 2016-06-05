@@ -143,15 +143,15 @@ img {
 }
 
 .nav a:focus, .nav a:hover {
-    background-color: #999999;
+    background-color: #c1c1c1;
     color: #ffffff;
     outline: none;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+
 }
 
 .no-borderradius .nav a:focus, .no-borderradius .nav a:hover {
     background-color: transparent;
-    color: #444444;
+    color: #c1c1c1;
     text-decoration: underline;
 }
 
@@ -446,7 +446,7 @@ th.desc a {
 }
 
 th:hover, tr:hover {
-    background: #79b94c;
+    background: #c2c1c1;
 }
 
 /* PAGINATION */

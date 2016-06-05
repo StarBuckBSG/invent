@@ -28,8 +28,18 @@
             </g:hasErrors>
             <g:form resource="${this.item}" method="PUT">
                 <g:hiddenField name="version" value="${this.item?.version}" />
-                <fieldset class="form">
-                    <f:all bean="item"/>
+                
+				<fieldset class="form">
+				    <f:field bean="item" property="name"/>
+				    <f:field bean="item" property="description"/>
+				    <f:field bean="item" property="quantity"/>
+				    <f:field bean="item" property="ourPartNumber"/>
+				    <f:field bean="item" property="manufacturerPartNumber"/>
+				    <f:field bean="item" property="suppliersPartNumber"/>
+				    <f:field bean="item" property="manufacturerName"/>
+				    <f:field bean="item" property="modelNumber"/>
+				    <f:field bean="item" property="listPrice"/>
+				    <f:field bean="item" property="sellPrice"/>
                 </fieldset>
                 <fieldset class="buttons">
                     <input class="save" type="submit" value="${message(code: 'default.button.update.label', default: 'Update')}" />
