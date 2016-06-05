@@ -27,7 +27,16 @@
             </g:hasErrors>
             <g:form action="save">
                 <fieldset class="form">
-                    <f:all bean="item"/>
+				    <f:field bean="item" property="name"/>
+				    <f:field bean="item" property="description"/>
+				    <f:field bean="item" property="quantity"/>
+				    <f:field bean="item" property="ourPartNumber"/>
+				    <f:field bean="item" property="manufacturerPartNumber"/>
+				    <f:field bean="item" property="suppliersPartNumber"/>
+				    <f:field bean="item" property="manufacturerName"/>
+				    <f:field bean="item" property="modelNumber"/>
+				    <f:field bean="item" property="listPrice"/>
+				    <f:field bean="item" property="sellPrice"/>
                 </fieldset>
                 <fieldset class="buttons">
                     <g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
