@@ -36,13 +36,13 @@ body {
     background: #ffffff;
     color: #333333;
     overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
-    -moz-box-shadow: 0 0 0.3em #4D8618;
-    -webkit-box-shadow: 0 0 0.3em #4D8618;
-    box-shadow: 0 0 0.3em #4D8618;
+    -moz-box-shadow: 0 0 0.3em #337ab7;
+    -webkit-box-shadow: 0 0 0.3em #337ab7;
+    box-shadow: 0 0 0.3em #000000;
 }
 
 #grailsLogo {
-    background-color: #abbf78;
+    background-color: #ffffff;
 }
 
 a:hover, a:active {
@@ -445,10 +445,6 @@ th.desc a {
     background: #ffffff;
 }
 
-th:hover, tr:hover {
-    background: #c2c1c1;
-}
-
 /* PAGINATION */
 
 .pagination {
@@ -571,4 +567,13 @@ a.skip {
 img.grails-logo {
     height:340px;
     margin-top:-10px;
+}
+.search-result-header {
+    margin-left: 15px;
+}
+
+
+
+.search-result-table-td  {
+	padding: 60px;
 }
